@@ -1,0 +1,29 @@
+.card {
+    margin: 0 4rem;
+  }
+  
+  .content {
+    text-align: center;
+    background-color: #E7E7E9;
+    height: 200px;
+    padding-top: 25px;
+  }
+  
+  .content > img {
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  .content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    color: blue;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 2rem;
+  }

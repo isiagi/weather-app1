@@ -1,0 +1,22 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 4rem;
+  padding: 2rem 0;
+}
+
+.app__2 > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.pp__3 {
+  display: flex;
+  max-width: 500px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #E7E7E9;
+  justify-content: center;
+  align-items: center;
+}

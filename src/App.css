@@ -1,0 +1,65 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 4rem;
+  padding: 2rem 0;
+}
+
+.app__2 > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.lovez {
+ display: flex;
+ justify-content: space-between;
+ margin: 0 4rem;
+}
+
+.pp__3 {
+  display: flex;
+  max-width: 500px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: rgb(189, 188, 188);
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 0 4rem;
+}
+
+.content {
+  text-align: center;
+  background-color: rgb(189, 188, 188);
+  height: 200px;
+  padding-top: 25px;
+}
+
+.content > img {
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.content1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 2rem;
+}
+
+.inputz {
+  outline: none;
+  padding: .2rem 0;
+  font-size: 1.2rem;
+  border: 1px solid #eee;
+  font-family: 'Alkatra', cursive;
+}
