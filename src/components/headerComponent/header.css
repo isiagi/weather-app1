@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 4rem;
+  border-bottom: .1px solid rgba(0,0,0,0.2);
 }
 
 .inputz {
@@ -14,6 +15,7 @@
 
 .header__search {
   position: relative;
+  display: flex;
 }
 
 .search__icon {
@@ -22,4 +24,23 @@
   top: 12px;
   cursor: pointer;
   font-size: 20px;
+}
+
+.home__input {
+  padding: .6rem;
+  border: 1px solid #DE8718;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+}
+
+.weather__button {
+  padding: .6rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-color: #DE8718;
+  color: #fff;
 }

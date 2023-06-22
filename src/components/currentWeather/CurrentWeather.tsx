@@ -12,24 +12,36 @@ const CurrentWeather = (props: Props) => {
   const data = useFetch();
   // console.log(data.data);
   // console.log(data.error)
+  // "#DEB018"
 
   return (
     <div className="App">
       <div className="app__1">
-        <h1 style={{ color: "#DEB018" }}>{data.data?.location.region}</h1>
-        <p>{data.data?.location.country}</p>
+        <h1 style={{ color: "#DE8718" }}>{data.data?.location.region}</h1>
+        <p style={{ color: "rgba(0,0,0,0.6)" }}>
+          {data.data?.location.country}
+        </p>
         <div>
-          <h1 style={{ fontSize: "50px", color: "#FADD1C" }}>
+          <h1 style={{ fontSize: "50px", color: "#DEB018" }}>
             {data.data?.current.temp_c} &deg;
           </h1>
           <p style={{ color: "blue" }}>
-            Condition: {data.data?.current.condition.text}
+            Condition:{" "}
+            <span style={{ color: "#F5AF26" }}>
+              {data.data?.current.condition.text}
+            </span>
           </p>
           <p style={{ color: "blue" }}>
-            Humdity: {data.data?.current.humidity}
+            Humdity:{" "}
+            <span style={{ color: "#F5AF26" }}>
+              {data.data?.current.humidity}
+            </span>
           </p>
           <p style={{ color: "blue" }}>
-            Wind speed / kph: {data.data?.current.wind_kph}
+            Wind speed / kph:{" "}
+            <span style={{ color: "#F5AF26" }}>
+              {data.data?.current.wind_kph}
+            </span>
           </p>
         </div>
       </div>
@@ -51,7 +63,7 @@ const CurrentWeather = (props: Props) => {
         {data.data?.forecast.forecastday[0].hour
           .slice(6, 18)
           .map((obj: { condition: any; time: string }) => (
-            <div style={{ textAlign: "center" }}>
+            <div className="currenttags" style={{ textAlign: "center" }}>
               <p style={{ fontSize: "15px", color: "blue" }}>
                 {obj.time.split(" ")[1]}
               </p>

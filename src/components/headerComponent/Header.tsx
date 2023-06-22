@@ -29,7 +29,7 @@ function Header({}: Props) {
     <div className="lovez">
       <div className="lovek">
         <h1 style={{ color: "#F5AF26" }}>Weather Forcast</h1>
-        <p>{new Date("2023-03-24").toLocaleDateString()}</p>
+        <p style={{ color: 'rgba(0,0,0,0.6)' }}>Date: {new Date("2023-03-24").toLocaleDateString()}</p>
       </div>
       {isLoading ? "lia" : ""}
       <div className="header__search">
