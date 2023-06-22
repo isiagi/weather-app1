@@ -5,10 +5,7 @@ const apiKey = import.meta.env.VITE_API_KEY;
 
 const UseCityWeather = function (city: string = "kampala") {
   const [inputValue, setInputValue] = useState(city);
-
-  console.log(apiKey);
   
-
   const { isLoading, error, data, refetch } = useQuery(
     ["weatherData", city],
     () =>
