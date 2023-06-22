@@ -13,7 +13,7 @@ const UseCityWeather = function (city: string = "kampala") {
     ["weatherData", city],
     () =>
       fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${inputValue}&days=6`
+        `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${inputValue}&days=6`
       ).then((res) => res.json()),
     {
       refetchOnWindowFocus: false,
